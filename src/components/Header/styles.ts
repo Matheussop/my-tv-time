@@ -4,6 +4,10 @@ export const HeaderContainer = styled.header`
   height: 100vh;
   width: 16rem;
   border-right: 1px solid var(--gray-light);
+  position: sticky; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
 `;
 
 export const HeaderContent = styled.div`
