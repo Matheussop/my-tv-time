@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { useState } from 'react';
 import { RiSearchLine } from "react-icons/ri";
+import { RewardCard } from '../components/RewardCard';
 
 import { HomeContainer, 
           HomeContent, 
@@ -81,9 +82,15 @@ const Home: NextPage = () => {
         </HomeContent>
       </HomeContainer>
       <SideBarHome>
-        <div>
+        <div className="searchBox">
           <p>Procurar</p>
           <RiSearchLine size="24" color={'#A2A2A6'}/>
+        </div>
+        <div className="lastViews">
+          <h2>
+            Últimos assistidos
+          </h2>
+           <RewardCard movieTitle={'Batman Begins'} movieType={'Ação'}/>
         </div>
       </SideBarHome>
     </>

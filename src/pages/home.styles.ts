@@ -83,7 +83,7 @@ export const SideBarHome = styled.div`
   left: 1280;
   padding: 1.5rem;
   
-  div:first-child{
+  .searchBox{
     margin-top: 3rem;
     border: 1px solid var(--gray-light);
     border-radius: 1.5rem;
@@ -94,5 +94,15 @@ export const SideBarHome = styled.div`
     padding: 0.5rem 1rem;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .lastViews{
+    margin: 2.5rem 0;
+
+    h2{
+      font-size: 1.2rem;
+      margin: 2rem 0;
+      color: ${({theme}) => theme.colors.gray_light};
+    }
   }
 `;
