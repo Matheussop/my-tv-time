@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import { useState } from 'react';
-import { RiSearchLine } from "react-icons/ri";
-import { RewardCard } from '../components/RewardCard';
+import { SideBar } from '../components/SideBar';
 
 import { HomeContainer, 
           HomeContent, 
@@ -12,8 +11,7 @@ import { HomeContainer,
           CardsContainer,
           CardsStremingsCards,
           ImageCard, 
-          ListStreamingWrapper,
-          SideBarHome} from './home.styles'
+          ListStreamingWrapper} from './home.styles'
           
 const Home: NextPage = () => {
   const [ typeStreaming, setTypeStreaming ] = useState('Movie');
@@ -55,7 +53,7 @@ const Home: NextPage = () => {
         </NavigationHome>
         <HomeContent>
           <ImageContainer>
-            <PrimaryImage src={imageBannerSRC} loader={() => myLoader({src: imageBannerSRC})} alt="Banner Principal da página. Referente a um filme." width="750" height="350" layout='intrinsic' />
+            <PrimaryImage src={imageBannerSRC} loader={() => myLoader({src: imageBannerSRC})} alt="Banner Principal da página. Referente a um filme." width="900" height="400" layout='intrinsic' />
           </ImageContainer>
           <ListStreamingWrapper>
             <CardsContainer>
@@ -63,9 +61,10 @@ const Home: NextPage = () => {
                 Recomendados
               </h2>
               <CardsStremingsCards>
-                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
-                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
-                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
+                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageRecomended} loader={() => myLoader({src: imageRecomended})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
               </CardsStremingsCards>
             </CardsContainer>
             <CardsContainer>
@@ -73,26 +72,16 @@ const Home: NextPage = () => {
                 Categorias
               </h2>
               <CardsStremingsCards>
-                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
-                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
-                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="250" height="225" layout='fixed'/>
+                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
+                <ImageCard src={imageCategories} loader={() => myLoader({src: imageCategories})} alt="Primeiro filme recomendado." width="225" height="225" layout='fixed'/>
               </CardsStremingsCards>
             </CardsContainer>
           </ListStreamingWrapper>
         </HomeContent>
       </HomeContainer>
-      <SideBarHome>
-        <div className="searchBox">
-          <p>Procurar</p>
-          <RiSearchLine size="24" color={'#A2A2A6'}/>
-        </div>
-        <div className="lastViews">
-          <h2>
-            Últimos assistidos
-          </h2>
-           <RewardCard movieTitle={'Batman Begins'} movieType={'Ação'}/>
-        </div>
-      </SideBarHome>
+      <SideBar/>
     </>
   )
 }

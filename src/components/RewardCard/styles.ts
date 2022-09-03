@@ -1,9 +1,9 @@
-import { RiStarSLine } from 'react-icons/ri';
 import styled from 'styled-components'
 
 export const RewardCardContainer = styled.header`
   display: flex;
-
+  align-items: center;
+  
   .imagebox{
     max-width: 100px;
   }
@@ -13,10 +13,13 @@ export const RewardCardContainer = styled.header`
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    
     .movieTitle{
       font-size: 1.1rem;
       font-weight: 500;
       color: ${({theme}) => theme.colors.gray_medium};
+      text-align: center;
+      width: 100%;
     }
 
     .movieType{

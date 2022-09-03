@@ -56,7 +56,7 @@ export const CardsContainer = styled.div`
 
 export const CardsStremingsCards = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 
   width: 110%;
@@ -73,36 +73,3 @@ export const ListStreamingWrapper = styled.div`
   }
 `;
 
-export const SideBarHome = styled.div`
-  height: 100vh;
-  width: 20rem;
-  border-left: 1px solid var(--gray-light);
-  position: sticky; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 1280;
-  padding: 1.5rem;
-  
-  .searchBox{
-    margin-top: 3rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 1.5rem;
-    width: 14rem;
-    height: 2.5rem;
-
-    display: flex;
-    padding: 0.5rem 1rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .lastViews{
-    margin: 2.5rem 0;
-
-    h2{
-      font-size: 1.2rem;
-      margin: 2rem 0;
-      color: ${({theme}) => theme.colors.gray_light};
-    }
-  }
-`;
