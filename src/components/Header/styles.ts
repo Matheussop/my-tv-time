@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
+  background-color: var(--background);
 `;
 
 export const HeaderContent = styled.div`
