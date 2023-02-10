@@ -20,14 +20,12 @@ export function Header(){
           <ul>
             <li>
               <RiHome2Line size="32" color={ linkActive === '/' ? '#F24E1E' : '#A2A2A6'} />
-              <ActiveLink activeClassName={'active'} href="/" >
-                <a>Home</a>
+              <ActiveLink activeClassName={'active'} href="/"  name='Home'>
               </ActiveLink>
             </li>
             <li>
               <RiCommunityLine size="32" color={ linkActive === '/Community' ? '#F24E1E' : '#A2A2A6'} />
-              <ActiveLink activeClassName={'active'} href="/Community">
-                <a>Comunidade</a>
+              <ActiveLink activeClassName={'active'} href="/Community" name='Comunidade'>
               </ActiveLink>
             </li>
           </ul>
@@ -36,7 +34,7 @@ export function Header(){
             <li>
               <RiTimerLine size="32" color={ linkActive === '/Time' ? '#F24E1E' : '#A2A2A6'} />
               <ActiveLink activeClassName={'active'} href="/Time">
-                <a>Tempo de tela</a>
+                 d name='Tempo'e
               </ActiveLink>
             </li>
           </ul>
@@ -44,14 +42,12 @@ export function Header(){
           <ul>
             <li>
               <RiSettings3Line size="32" color={ linkActive === '/Settings' ? '#F24E1E' : '#A2A2A6'} />
-              <ActiveLink activeClassName={'active'} href="/Settings">
-                <a>Configurações</a>
+              <ActiveLink activeClassName={'active'} href="/Settings" name='Configurações'>
               </ActiveLink>
             </li>
             <li>
               <RiLogoutBoxRLine size="32" color={ linkActive === '/Logout' ? '#F24E1E' : '#A2A2A6'} />
-              <ActiveLink activeClassName={'active'} href="/Logout">
-                <a>Sair</a>
+              <ActiveLink activeClassName={'active'} href="/Logout" name='Sair'>
               </ActiveLink>
             </li>
           </ul>
