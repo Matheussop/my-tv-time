@@ -1,6 +1,6 @@
-import { ReactElement, cloneElement } from "react";
+"use client"
 import Link, { LinkProps } from "next/link";
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 interface ActiveLinkProps extends LinkProps {
   name: string;
@@ -8,7 +8,7 @@ interface ActiveLinkProps extends LinkProps {
 }
 
 export function ActiveLink({name, activeClassName, ...rest }: ActiveLinkProps) {
-  const { asPath } = useRouter();
+  const asPath  = usePathname();
 
   const className = asPath === rest.href ? activeClassName : '';
 

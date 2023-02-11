@@ -1,11 +1,11 @@
-import styles from './styles.module.scss'
+import { LogoContainer } from './styles'
 
 export function Logo(){ 
   return(
-    <div className={styles.logoContainer}>
+    <LogoContainer>
       <p>My</p>
       <span>STREAMING</span>
       <p>Time</p>
-    </div>
+    </LogoContainer>
   )
 }

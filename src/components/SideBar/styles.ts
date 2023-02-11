@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
-
 export const SideBarHome = styled.div`
   width: 20rem;
   border-left: 1px solid var(--gray-light);
   position: sticky; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: auto;
+  left: 80%;
   padding: 1.5rem;
   
   .searchBox{

@@ -1,6 +1,8 @@
+"use client"
 import type { NextPage } from 'next'
 import { useState } from 'react';
-import { SideBar } from '../components/SideBar';
+import { SideBar } from '../../components/SideBar';
+
 
 import { HomeContainer, 
           HomeContent, 

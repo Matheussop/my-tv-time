@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     background: var(--background);
     color: var(--gray-light);
+    display: flex;
   }
 
   body, input, textarea, select, button {
